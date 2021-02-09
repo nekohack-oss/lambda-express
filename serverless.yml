@@ -1,0 +1,15 @@
+service: lambda-express
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: ap-northeast-1
+
+functions:
+  hello:
+    handler: lambda.handler

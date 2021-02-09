@@ -1,0 +1,24 @@
+{
+  "name": "lambda-express",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "create": "sls create --template aws-nodejs",
+    "deploy": "sls deploy",
+    "lint": "eslint ./ --ext js",
+    "lint:fix": "eslint ./ --ext js --fix"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "serverless": "^2.23.0",
+    "serverless-http": "^2.7.0",
+    "serverless-offline": "^6.8.0"
+  },
+  "devDependencies": {
+    "@nekohack/eslint-config": "^0.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.13.0"
+  }
+}
